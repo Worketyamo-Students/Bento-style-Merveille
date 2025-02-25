@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bento style</title>
-    <script src=".https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Bento_style</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -18,9 +18,9 @@
                --color-orange: #F35034;
                --color-orange2: #E63E21; 
                --color-blanct: #FFFFFF;
-               --color-page:#1B1B1B;
-               --color-noir:#262626;
-               --color-noirb:#161616;
+               --color-page: #1B1B1B;
+               --color-noir: #262626;
+               --color-noirb: #161616;
                --color-noirt: #3F3E3E;
                --color-gris: #C0C0C0;
       }
@@ -36,7 +36,7 @@
                 class=" w-[27.5px] h-[27.5px] md:w-[40px] md:h-[40px] rounded-[33px] bg-section objet-cover" alt="">
         </div>
         <div
-            class=" flex justify-between  items-center p-4  md:pr-16 md:pl-8 md:rounded-[48px] w-11/12  h-[42px] md:h-1/5 rounded-[22px] bg-noir">
+            class=" flex justify-between  items-center p-4  md:pr-16 md:pl-8 md:rounded-[48px] w-full  h-[42px] md:h-1/5 rounded-[22px] bg-noir">
             <h1 class="  w-[47px] h-[24px] font-bold text-[13px] text-orange">ABOUT</h1>
             <h1 class="  hidden md:block w-[47px] h-[24px] font-bold text-[13px] text-blanct">PORTFOLIO</h1>
             <h1 class="  hidden md:block w-[47px] h-[24px] font-bold text-[13px] text-blanct">CONCTACT</h1>
@@ -45,16 +45,17 @@
         </div>
     </header>
     <!-- section1 -->
-    <section class="flex flex-col  w-full gap-4 p-4 bg-noir lg:p-8 rounded-[9px] mt-4">
+    <section class="flex flex-col  w-full gap-4 p-4 bg-noir lg:p-8 rounded-[9px] mt-4 lg:mt-8">
         <div class="flex flex-col lg:flex-row  gap-2 lg:justify-between">
 
-            <div class=" flex lg:hidden  justify-center items-center rounded-[14px] w-[125px] h-[21px] bg-page flex gap-1">
+            <div
+                class=" flex lg:hidden  justify-center items-center rounded-[14px] w-[125px] h-[21px] bg-page flex gap-1">
                 <div class="mt-1 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-orange"></div>
                 <h2 class="text-blanct text-[9px] font-[500] font-inter ">AVAILABLE FOR JOB</h2>
             </div>
-            
+
             <h1 class="text-blanct text-[16px] font-[500] font-inter ">UI/UX Designer</h1>
-            
+
             <div class=" flex  justify-center items-center rounded-[14px] w-[125px] h-[21px] bg-page  gap-1 ">
                 <div class="mt-1 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-orange"></div>
                 <h2 class="text-blanct text-[9px] font-[500] font-inter ">AVAILABLE FOR JOB</h2>
@@ -92,198 +93,200 @@
                 </div>
             </div>
 
-            <div class=" hidden lg:block w-[180px] h-[180px] rounded-full   bg-noirt lg:flex justify-center items-center">
+            <div
+                class=" hidden lg:block w-[180px] h-[180px] rounded-full   bg-noirt lg:flex justify-center items-center">
                 <img src="assets/img/fille.svg" alt="" class="w-[157px] h-[157px] rounded-full object-cover">
             </div>
         </div>
     </section>
 
     <!-- ......section2.. -->
-    <section class="flex flex-col w-full mt-8 ">
-        <div class="w-full ">
-            <div class="w-full  h-auto bg-noir rounded-[9px]">
-                <div class=" flex gap-1 p-6">
-                    <div class=" mt-2 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-blanct"></div>
-                    <h2 class="text-blanct text-[16px] font-[500] font-inter ">Recent Work</h2>
-                </div>
+    <section class="grid grid-cols-1 w-full mt-8  lg:grid-cols-2  lg:gap-6">
 
-                <div class="flex flex-col p-6 ">
+        <div class="w-full  h-auto bg-noir rounded-[9px] lg:p-6 lg:h-[594px] lg:-mt-0.5">
+            <div class=" flex gap-1 p-6 lg:gap-2">
+                <div class=" mt-2 lg:mt-3 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-blanct"></div>
+                <h2 class="text-blanct text-[16px] lg:text-[24px]  font-[500] font-inter ">Recent Work</h2>
+            </div>
 
-                    <div class="flex flex-col w-full gap-4  ">
-                        <div class="flex justify-between">
-                            <div class="flex  flex-col">
-                                <h1 class="text-orange text-base font-[500] font-inter"> Product designer</h1>
-                                <h4 class="text-blanct text-sm font-[400] font-inter">2023-present</h4>
-                            </div>
-                            <h2 class="text-blanct text-sm font-[400] font-inter">Figma</h2>
-                        </div>
+            <div class="flex flex-col p-6 ">
 
-                        <div class="flex justify-between">
-                            <div class="flex flex-col">
-                                <h1 class="text-blanct text-base font-[500] font-inter"> Product designer</h1>
-                                <h4 class="text-blanct text-sm font-[400] font-inter">2021-2022</h4>
-                            </div>
-                            <h2 class="text-blanct text-sm font-[400] font-inter mt-3">Google</h2>
+                <div class="flex flex-col w-full gap-4 lg:gap-12 ">
+                    <div class="flex justify-between">
+                        <div class="flex  flex-col">
+                            <h1 class="text-orange text-base lg:text-[24px]  font-[500] font-inter"> Product designer</h1>
+                            <h4 class="text-blanct text-sm  lg:text-[20px] font-[400] font-inter">2023-present</h4>
                         </div>
-                        <div class="flex justify-between">
-                            <div class="flex flex-col">
-                                <h1 class="text-blanct text-base font-[500] font-inter"> Product designer</h1>
-                                <h4 class="text-blanct text-sm font-[400] font-inter">2023-present</h4>
-                            </div>
-                            <h2 class="text-blanct text-sm font-[400] font-inter mt-3">Figma</h2>
-                        </div>
+                        <h2 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter">Figma</h2>
+                    </div>
 
-                        <div class="flex justify-between">
-                            <div class="flex flex-col">
-                                <h1 class="text-blanct text-base font-[500] font-inter"> Product designer</h1>
-                                <h4 class="text-blanct text-sm font-[400] font-inter">2023-present</h4>
-                            </div>
-                            <h2 class="text-blanct text-sm font-[400] font-inter mt-3">Figma</h2>
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <h1 class="text-blanct text-base lg:text-[24px]  font-[500] font-inter"> Product designer</h1>
+                            <h4 class="text-blanct text-sm  lg:text-[20px]font-[400] font-inter">2021-2022</h4>
                         </div>
+                        <h2 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter mt-3">Google</h2>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <h1 class="text-blanct text-base lg:text-[24px]  font-[500] font-inter"> Product designer</h1>
+                            <h4 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter">2023-present</h4>
+                        </div>
+                        <h2 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter mt-3">Figma</h2>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <h1 class="text-blanct text-base  lg:text-[24px] font-[500] font-inter"> Product designer</h1>
+                            <h4 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter">2023-present</h4>
+                        </div>
+                        <h2 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter mt-3">Figma</h2>
                     </div>
                 </div>
             </div>
-            <!-- tableau -->
-            <div class="flex  mt-6 flex-col">
-                <div class="h-12 p-[.11rem] bg-gradient-to-r from-noir via-noir via-black to-orange2    rounded-xl  ">
-                    <div
-                        class=" flex justify-center items-center relative w-full  h-20  bg-gradient-to-tr from-noir via-noir  via-page  via-noir to-orange rounded-xl ">
-                        <div class="w-full h-20 bg-black opacity-50 absolute rounded-xl ">
-                        </div>
-                        <h1 class="text-gris relative  text-sm font-[500] font-inter ">Product design</h1>
+        </div>
+        <!-- tableau -->
+        <div class="flex  mt-6 flex-col lg:grid lg:-gap-44 lg:-mt-0.5 ">
+            <div class="h-12 p-[.11rem] bg-gradient-to-r from-noir via-noir via-black to-orange2  lg:h-[150px]  rounded-xl  lg:h-[140px] ">
+                <div
+                    class=" flex justify-center items-center relative w-full  h-20 lg:h-[150px]  bg-gradient-to-tr from-noir via-noir  via-page  via-noir to-orange rounded-xl ">
+                    <div class="w-full h-20 lg:h-[150px] bg-black opacity-50 absolute rounded-xl ">
                     </div>
+                    <h1 class="text-gris relative  text-sm lg:text-[24px] font-[500] font-inter ">Product design</h1>
                 </div>
-                <div class="flex  mt-12 w-full  gap-3">
-                    <div
-                        class=" flex-1 h-12 p-[.11rem] bg-gradient-to-r from-noir via-noir via-black to-orange2    rounded-xl  ">
-                        <div
-                            class=" flex justify-center items-center relative w-full  h-20   bg-gradient-to-tr from-noir via-black to-orange rounded-xl ">
-                            <div class="w-full h-20 bg-black opacity-50 absolute rounded-xl ">
-                            </div>
-                            <h1 class="text-gris relative  text-sm font-[500] font-inter ">User Experience</h1>
-                        </div>
-
-                    </div>
-
-                    <div
-                        class=" flex-1 h-20 pl-[.11rem] bg-gradient-to-tr from-orange2  via-black  to-black   rounded-xl  ">
-                        <div
-                            class=" flex justify-center items-center  -mt-[.11rem] relative w-full  h-20   bg-gradient-to-tr from-orange  via-black  to-noir rounded-xl ">
-                            <div class="w-full h-20 bg-black opacity-50 absolute rounded-xl ">
-                            </div>
-                            <h1 class="text-gris relative  text-sm font-[500] font-inter ">NoCode develop</h1>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+            <div class="flex  mt-12 lg:-mt-50   w-full lg:gap-4 gap-3">
+                <div
+                    class=" flex-1 h-12  lg:h-[150px] p-[.11rem] lg:h-[140px]  bg-gradient-to-r from-noir via-noir via-black to-orange2    rounded-xl  ">
+                    <div
+                        class=" flex justify-center items-center relative w-full  h-20  lg:h-[150px]  bg-gradient-to-tr from-noir via-black to-orange rounded-xl ">
+                        <div class="w-full h-20  lg:h-[150px] bg-black opacity-50 absolute rounded-xl ">
+                        </div>
+                        <h1 class="text-gris relative  text-sm lg:text-[24px] font-[500] font-inter ">User Experience</h1>
+                    </div>
 
+                </div>
+
+                <div
+                    class=" flex-1 h-20 pl-[.11rem] lg:h-[150px] bg-gradient-to-tr from-orange2  via-black  to-black   rounded-xl  ">
+                    <div
+                        class=" flex justify-center items-center  -mt-[.11rem] relative w-full  lg:h-[150px] h-20   bg-gradient-to-tr from-orange  via-black  to-noir rounded-xl ">
+                        <div class="w-full h-20 bg-black lg:h-[150px] opacity-50 absolute rounded-xl ">
+                        </div>
+                        <h1 class="text-gris relative  text-sm lg:text-[24px] font-[500] font-inter ">NoCode develop</h1>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
+
+
+
         <!-- telephone -->
-        <div class="flex flex-col  bg-noir rounded-[9px] mt-8">
-            <div class="flex  m-8 justify-between">
+        <div class="flex flex-col  bg-noir rounded-[9px] mt-8  lg:h-[815px] lg:-mt-0.5 ">
+            <div class="flex  m-8 lg:m-12 justify-between">
                 <div class="flex flex-col">
-                    <h1 class="text-blanct text-sm font-[600] font-inter">OS Mobile app</h1>
-                    <h2 class="text-blanct text-[12px] font-[400] font-inter">Product develop</h2>
+                    <h1 class="text-blanct text-sm lg:text-[24px]  font-[600] font-inter">OS Mobile app</h1>
+                    <h2 class="text-blanct text-[12px] lg:text-[20px] font-[400] font-inter">Product develop</h2>
                 </div>
                 <div class="w-[22px] h-[22px] rounded-full bg-orange2 flex justify-center items-center">
                     <img src="assets/img/fleche.svg" alt="" class="w-[8px] h-[10px]  object-cover">
                 </div>
             </div>
-            <div class="w-[238px] h-[350px]  mr-12 ml-12">
-            <img src="assets/img/telephone.svg" alt="" class=" object-cover">
+            <div class="w-[238px] h-[350px]  lg:h-[815px] lg:w-[433px] lg:mt-4 lg:ml-20 mr-12 ml-12">
+                <img src="assets/img/telephone.svg" alt="" class=" object-cover">
+            </div>
         </div>
-        </div>
-<!-- ;;;;; -->
- <div class="bg-noir rounded-[9px] mt-4">
-    <div class="flex  m-8 justify-between">
-    <div class="flex flex-col">
-        <h1 class="text-blanct text-sm font-[600] font-inter">AI Music product</h1>
-        <h2 class="text-blanct text-[12px] font-[400] font-inter">UX Case study</h2>
-    </div>
-    <div class="w-[22px] h-[22px] rounded-full bg-orange2 flex justify-center items-center">
-        <img src="assets/img/fleche.svg" alt="" class="w-[8px] h-[10px]  object-cover">
-    </div>
+        <!-- ;;;;; -->
+        <div class="lg:-mt-72 lg:grid lg:gap-12">
+            <div class="bg-noir  lg:h-[528px] rounded-[9px] mt-4">
+                <div class="flex  m-8 justify-between lg:m-12">
+                    <div class="flex flex-col">
+                        <h1 class="text-blanct text-sm lg:text-[24px] font-[600] font-inter">AI Music product</h1>
+                        <h2 class="text-blanct text-[12px] lg:text-[20px] font-[400] font-inter">UX Case study</h2>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded-full bg-orange2 flex justify-center items-center">
+                        <img src="assets/img/fleche.svg" alt="" class="w-[8px] h-[10px]  object-cover">
+                    </div>
 
-</div>
-<div class=" flex justify-center w-7/12 h-auto  mr-12 ml-12">
-    <div class="relative bg-cover  ml-12 bg-center bg-no-repeat w-[139px] h-[146px] "
-                    style="background-image:url('assets/img/Music2.svg')">
-                
-                
-                    <div class="relative bg-cover bg-center bg-no-repeat w-[152px] h-[159px]  -ml-12 -mt-4"
-                    style="background-image:url('./assets/img/Music.svg')">
+                </div>
+                <div class=" flex justify-center lg:justify-center lg:m-20 lg:ml-32 lg:items-center w-7/12 h-auto  mr-12 ml-12">
+                    <div class="relative bg-cover  ml-12 bg-center bg-no-repeat w-[139px] h-[146px]  lg:w-[271px] lg:h-[285px] "
+                        style="background-image:url('assets/img/Music2.svg')">
+
+
+                        <div class="relative bg-cover bg-center bg-no-repeat w-[152px] h-[159px]  lg:w-[251px] lg:h-[275px] -ml-12 -mt-4 "
+                            style="background-image:url('./assets/img/Music.svg')">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- ;;;;; -->
+            <div class="bg-noir lg:h-[528px] rounded-[9px] mt- lg:-mt-6">
+                <div class="flex  m-8 justify-between lg:m-12">
+                    <div class="flex flex-col">
+                        <h1 class="text-blanct text-sm lg:text-[24px] font-[600] font-inter">AI Music product</h1>
+                        <h2 class="text-blanct text-[12px] lg:text-[20px] font-[400] font-inter">UX Case study</h2>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded-full bg-orange2 flex justify-center items-center">
+                        <img src="assets/img/fleche.svg" alt="" class="w-[8px] h-[10px]  object-cover">
+                    </div>
                 </div>
 
-</div>
 
- </div>
-</div>
- <!-- ;;;;; -->
- <div class="bg-noir h-full rounded-[9px] mt-4">
-    <div class="flex  m-8 justify-between">
-    <div class="flex flex-col">
-        <h1 class="text-blanct text-sm font-[600] font-inter">AI Music product</h1>
-        <h2 class="text-blanct text-[12px] font-[400] font-inter">UX Case study</h2>
-    </div>
-    <div class="w-[22px] h-[22px] rounded-full bg-orange2 flex justify-center items-center">
-        <img src="assets/img/fleche.svg" alt="" class="w-[8px] h-[10px]  object-cover">
-    </div>
-</div>
-
-
-    <div class=" flex justify-center w-7/12 h-auto  mt-16 mr-12 ml-12">
-        <div class="relative bg-cover  ml-12 bg-center bg-no-repeat w-[139px] h-[146px] "
+                <div class=" flex justify-center w-7/12 h-auto  lg:m-20 lg:ml-32  mt-16 mr-12 ml-12 ">
+                    <div class="relative bg-cover  ml-12 bg-center bg-no-repeat w-[139px] h-[146px] lg:w-[271px] lg:h-[285px] "
                         style="background-image:url('assets/img/carte1.svg')">
-                    
-                    
-                        <div class="relative bg-cover bg-center bg-no-repeat w-[152px] h-[159px]  -ml-10 -mt-8"
-                        style="background-image:url('./assets/img/carte2.svg')">
-                    </div>
-    
-</div>
 
- </div>
- </div>
+
+                        <div class="relative bg-cover bg-center bg-no-repeat w-[152px] h-[159px]   lg:w-[251px] lg:h-[265px] -ml-10 -mt-8"
+                            style="background-image:url('./assets/img/carte2.svg')">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class=" lg:hidden flex justify-center  mt-12  items-center mb-12  gap-4 lg:justify-between flex-col">
         <div class=" lg:hidden  justify-center items-center rounded-[14px] w-[125px] h-[21px] bg-page flex gap-1">
-                <div class="mt-1 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-orange"></div>
-                <h2 class="text-blanct text-[9px] font-[500] font-inter ">AVAILABLE FOR JOB</h2>
-            </div>
-            <div class="flex gap-4">
-                <a href="href" class="font-inter text-[15px] font-[500] text-orange">Twitter</a>
-                <a href="href" class="font-inter text-[15px] font-[500] text-blanct">Instagram</a>
-                <a href="href" class="font-inter text-[15px] font-[500] text-blanct">LinkdIn</a>
-            </div>
+            <div class="mt-1 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-orange"></div>
+            <h2 class="text-blanct text-[9px] font-[500] font-inter ">AVAILABLE FOR JOB</h2>
+        </div>
+        <div class="flex gap-4">
+            <a href="href" class="font-inter text-[15px] font-[500] text-orange">Twitter</a>
+            <a href="href" class="font-inter text-[15px] font-[500] text-blanct">Instagram</a>
+            <a href="href" class="font-inter text-[15px] font-[500] text-blanct">LinkdIn</a>
+        </div>
 
-            <h1 class="w-[7/12] h-auto text-gris font-inter font-[500]">Portfolio 2024</h1>
+        <h1 class="w-[7/12] h-auto text-gris font-inter font-[500]">Portfolio 2024</h1>
 
     </footer>
 
     <div
-    class=" hidden lg:block  mt-16 flex-1 h-20.5 pl-[.04rem] bg-gradient-to-tr from-orange2  via-black  via-black to-black   rounded-xl" >
-    <div
-        class=" flex justify-center items-center  -mt-[.05rem] relative w-full  h-20.5   bg-gradient-to-tr from-orange  via-black  to-noir rounded-xl ">
-        <div class="w-full h-20 bg-black opacity-50 absolute rounded-xl  ">
-            <footer class=" flex justify-center    items-center mt-2 p-4  gap-4 lg:justify-between ">
-            <h1 class="w-[7/12] h-auto text-gris font-inter font-[500]">Portfolio 2024</h1>
-            <div class="flex  relative gap-4">
-                <a href="href" class="font-inter text-[15px] font-[500] relative  text-orange">Twitter</a>
-                <a href="href" class="font-inter text-[15px] font-[500] relative text-blanct">Instagram</a>
-                <a href="href" class="font-inter text-[15px] font-[500] text-blanct">LinkdIn</a>
+        class=" hidden lg:block  mt-6 flex-1 h-[122px] pl-[.04rem] bg-gradient-to-tr from-orange2  via-black  via-black to-black   rounded-xl">
+        <div
+            class=" flex justify-center items-center  -mt-[.05rem] relative w-full  h-[122px]  bg-gradient-to-tr from-orange  via-black  to-noir rounded-xl ">
+            <div class="w-full h-[122px] bg-black opacity-50 absolute rounded-xl ">
+                <footer class=" flex justify-center   items-center mt-2 p-10  gap-4 lg:justify-between ">
+                    <h1 class="w-[7/12] h-auto text-gris font-inter font-[500]">Portfolio 2024</h1>
+                    <div class="flex  relative gap-4">
+                        <a href="href" class="font-inter text-[15px] font-[500] relative  text-orange">Twitter</a>
+                        <a href="href" class="font-inter text-[15px] font-[500] relative text-blanct">Instagram</a>
+                        <a href="href" class="font-inter text-[15px] font-[500] text-blanct">LinkdIn</a>
+                    </div>
+                    <div class=" justify-center items-center rounded-[14px] w-[125px] h-[21px] bg-page flex gap-1">
+                        <div class="mt-1 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-orange"></div>
+                        <h2 class="text-blanct text-[9px] font-[500] font-inter ">AVAILABLE FOR JOB</h2>
+                    </div>
+                </footer>
             </div>
-            <div class=" justify-center items-center rounded-[14px] w-[125px] h-[21px] bg-page flex gap-1">
-                <div class="mt-1 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-orange"></div>
-                <h2 class="text-blanct text-[9px] font-[500] font-inter ">AVAILABLE FOR JOB</h2>
-            </div>
-            </footer>
+
         </div>
-     
-</div>
 
 </body>
 
