@@ -5,15 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bento_style</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <style type="text/tailwindcss">
-        @theme {       
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'orange': '#F35034',
+                        'orange2': '#E63E21',
+                        'blanct': '#FFFFFF',
+                        'page': '#1B1B1B',
+                        'noir': '#262626',
+                        'noirb': ' #161616',
+                        'noirt': '#3F3E3E',
+                        'gris': '#C0C0C0',
+                    },
+                    fontFamily: {
+                        'inter': ["Inter", 'serif']
+                    }
+
+                }
+               
+            }
+        }
+    </script>
+
+    <!-- <style type="text/tailwindcss">
+        /* @theme {       
                --font-inter: "Inter";
                --color-orange: #F35034;
                --color-orange2: #E63E21; 
@@ -23,8 +49,8 @@
                --color-noirb: #161616;
                --color-noirt: #3F3E3E;
                --color-gris: #C0C0C0;
-      }
-      </style>
+      } */
+      </style> -->
 
 </head>
 
@@ -37,49 +63,56 @@
         </div>
         <div
             class=" flex justify-between  items-center   md:pr-28 md:pl-12 md:rounded-[48px] w-full  h-[42px] md:h-[64px] rounded-[22px] bg-noir">
-            <h1 class="  w-[47px] h-[24px] font-bold text-[13px] pl-4 lg:text-[20px] text-orange">ABOUT</h1>
-            <h1 class="  hidden md:block w-[47px] h-[24px] font-bold text-[20px] text-blanct">PORTFOLIO</h1>
-            <h1 class="  hidden md:block w-[47px] h-[24px] font-bold text-[20px] text-blanct">CONCTACT</h1>
+            <h1 class="  w-[47px] h-[24px] font-bold text-[13px] pl-4 md:text-base lg:text-[20px] text-orange">ABOUT
+            </h1>
+            <h1 class="  hidden md:block w-[47px] h-[24px] font-bold lg:text-[20px] text-blanct">PORTFOLIO</h1>
+            <h1 class="  hidden md:block w-[47px] h-[24px] font-bold lg:text-[20px] text-blanct">CONCTACT</h1>
             <img src="assets/img/menu.svg" alt="" class=" md:hidden lg:hidden pr-4 w-16px h-12px object-cover">
         </div>
     </header>
     <!-- section1 -->
     <section class="flex flex-col  w-full gap-4 p-4 bg-noir lg:p-8 rounded-[9px] mt-4 lg:mt-8">
-        <div class="flex flex-col lg:flex-row  gap-2 lg:justify-between">
+        <div class="flex flex-col lg:flex-row md:flex-row md:justify-between gap-2 lg:justify-between">
             <div
-                class=" flex lg:hidden  justify-center items-center rounded-[14px] w-[125px] h-[21px] lg:w-[181px] lg:h-[26px] bg-page flex gap-1">
+                class=" flex lg:hidden md:hidden justify-center items-center rounded-[14px] w-[125px] h-[21px] lg:w-[181px] lg:h-[26px] bg-page flex gap-1">
                 <div class="mt-1 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-orange"></div>
                 <h2 class="text-blanct text-[9px] font-[500] lg:text-[13px] font-inter ">AVAILABLE FOR JOB</h2>
             </div>
 
             <h1 class="text-gris text-[16px] font-[500] lg:text-[24px] font-inter ">UI/UX Designer</h1>
 
-            <div class="flex  justify-center items-center rounded-[14px] w-[125px] h-[21px]  lg:w-[181px] lg:h-[26px] bg-page  gap-1 ">
+            <div
+                class=" hidden lg:block lg:flex  justify-center items-center rounded-[14px] w-[125px] h-[21px]  lg:w-[181px] lg:h-[26px] bg-page  gap-1 ">
                 <div class="mt-1 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-orange"></div>
                 <h2 class="text-blanct text-[9px] font-[500] lg:text-[13px] font-inter ">AVAILABLE FOR JOB</h2>
             </div>
         </div>
 
         <div class=" lg:flex lg:justify-between   md:flex md:justify-between mt-4">
-            <div class=" lg:hidden  md:hidden w-[80px] h-[80px] rounded-full   bg-noirt flex justify-center items-center">
+            <div
+                class=" lg:hidden  md:hidden w-[80px] h-[80px] rounded-full   bg-noirt flex justify-center items-center">
                 <img src="assets/img/fille.svg" alt="" class="w-[71px] h-[71px] rounded-full object-cover">
             </div>
             <div class=" flex flex-col gap-2 lg:gap-6 mt-6">
                 <h1 class="text-blanct text-[24px] font-[600] lg:text-[36px] font-inter">I'm Nguiyou Merveille</h1>
-                <h4 class="text-gris text-[16px] font-[400] w-[230px] lg:w-[280px] h-[52px] lg:text-[20px] font-inter">I design digital products
+                <h4 class="text-gris text-[16px] font-[400] w-[230px] lg:w-[280px] h-[52px] lg:text-[20px] font-inter">I
+                    design digital products
                     with
                     great experience.</h4>
                 <div class="flex gap-4 mt-6">
                     <button
-                        class="w-[84px] h-[33px] lg:w-[108px]  lg:h-[42px] rounded-[5px] bg-orange2 flex justify-center gap-2 items-center justify-between">
-                        <h1 class="text-blanct text-[11px] lg:text-[16px] font-[500] font-inter">Hire me</h1>
+                        class="w-[84px] h-[33px] lg:w-[108px] p-2  lg:h-[42px] rounded-[5px] bg-orange2 flex justify-center gap-2 items-center justify-between">
+                        <h1 class="text-blanct text-[11px] lg:text-[16px]  font-[500] font-inter">Hire me</h1>
                         <div class="h-[33px] lg:h-[42px] w-[1px] bg-noir"></div>
                         <h2 class="text-blanct text-[11px] lg:text-[16px] font-[500] font-inter">+</h2>
                     </button>
 
-                    <div class="w-[100px] h-[33px]  lg:w-[148px]  lg:h-[42px] bg-page flex justify-center items-center gap-2">
-                        <h1 class="text-blanct text-[11px]  lg:text-[16px] font-[500] font-inter">Copy Email</h1>
-                        <img src="assets/img/copy.svg" alt="copy" class="w-[12px] h-[12px]  lg:w-[24px]  lg:h-[24px] object-cover">
+                    <div
+                        class="w-[100px] h-[33px]  lg:w-[148px]  lg:h-[42px] rounded-[5px] bg-page flex justify-center items-center gap-2">
+                        <h1 class="text-gris text-[11px]  lg:text-[16px] font-[500] font-inter">Copy Email</h1>
+                        <div class="h-[33px] lg:h-[40px] w-[0.5px] bg-gray-700"></div>
+                        <img src="assets/img/copy.svg" alt="copy"
+                            class="w-[12px] h-[12px]  lg:w-[24px]  lg:h-[24px] object-cover">
                     </div>
                 </div>
             </div>
@@ -103,31 +136,35 @@
                 <div class="flex flex-col w-full gap-4 lg:gap-12 ">
                     <div class="flex justify-between">
                         <div class="flex  flex-col">
-                            <h1 class="text-orange text-base lg:text-[24px]  font-[500] font-inter"> Product designer</h1>
-                            <h4 class="text-blanct text-sm  lg:text-[20px] font-[400] font-inter">2023-present</h4>
+                            <h1 class="text-orange text-base lg:text-[24px]  font-[500] font-inter"> Product designer
+                            </h1>
+                            <h4 class="text-gris text-sm  lg:text-[20px] font-[400] font-inter">2023-present</h4>
                         </div>
                         <h2 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter">Figma</h2>
                     </div>
 
                     <div class="flex justify-between">
                         <div class="flex flex-col">
-                            <h1 class="text-blanct text-base lg:text-[24px]  font-[500] font-inter"> Product designer</h1>
-                            <h4 class="text-blanct text-sm  lg:text-[20px]font-[400] font-inter">2021-2022</h4>
+                            <h1 class="text-blanct text-base lg:text-[24px]  font-[500] font-inter"> Product designer
+                            </h1>
+                            <h4 class="text-gris text-sm  lg:text-[20px]font-[400] font-inter">2021-2022</h4>
                         </div>
                         <h2 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter mt-3">Google</h2>
                     </div>
                     <div class="flex justify-between">
                         <div class="flex flex-col">
-                            <h1 class="text-blanct text-base lg:text-[24px]  font-[500] font-inter"> Product designer</h1>
-                            <h4 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter">2023-present</h4>
+                            <h1 class="text-blanct text-base lg:text-[24px]  font-[500] font-inter"> Product designer
+                            </h1>
+                            <h4 class="text-gris text-sm lg:text-[20px] font-[400] font-inter">2023-present</h4>
                         </div>
                         <h2 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter mt-3">Figma</h2>
                     </div>
 
                     <div class="flex justify-between">
                         <div class="flex flex-col">
-                            <h1 class="text-blanct text-base  lg:text-[24px] font-[500] font-inter"> Product designer</h1>
-                            <h4 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter">2023-present</h4>
+                            <h1 class="text-blanct text-base  lg:text-[24px] font-[500] font-inter"> Product designer
+                            </h1>
+                            <h4 class="text-gris text-sm lg:text-[20px] font-[400] font-inter">2023-present</h4>
                         </div>
                         <h2 class="text-blanct text-sm lg:text-[20px] font-[400] font-inter mt-3">Figma</h2>
                     </div>
@@ -135,33 +172,37 @@
             </div>
         </div>
         <!-- tableau -->
-        <div class="flex  mt-6 flex-col lg:grid lg:-gap-44 lg:-mt-0.5 ">
-            <div class="h-12 p-[.11rem] bg-gradient-to-r from-noir via-noir via-black to-orange2  lg:h-[150px]  rounded-xl  lg:h-[140px] ">
+        <div class="flex  mt-6 flex-col lg:grid lg:-gap-48 lg:-mt-0.5 gap-8 ">
+            <div
+                class="h-12 p-[.11rem]  bg-gradient-to-tr from-noir  via-noir  to-orange2 lg:h-[150px]  rounded-xl  lg:h-[140px] ">
                 <div
-                    class=" flex justify-center items-center relative w-full  h-20 lg:h-[150px]  bg-gradient-to-tr from-noir via-noir  via-page  via-noir to-orange rounded-xl ">
-                    <div class="w-full h-20 lg:h-[150px] bg-black opacity-50 absolute rounded-xl ">
+                    class=" flex justify-center items-center relative w-full  h-20 lg:h-[150px]  bg-gradient-to-tr from-noir via-noir via-page via-noir to-orange rounded-xl ">
+                    <div class="w-full h-20 lg:h-[150px] bg-noir opacity-40 absolute rounded-xl ">
                     </div>
                     <h1 class="text-gris relative  text-sm lg:text-[24px] font-[500] font-inter ">Product design</h1>
                 </div>
+
             </div>
-            <div class="flex  mt-12 lg:-mt-50   w-full lg:gap-4 gap-3">
+            <div class="flex  mt-2 lg:-mt-52   w-full lg:gap-4 gap-3">
                 <div
-                    class=" flex-1 h-12  lg:h-[150px] p-[.11rem] lg:h-[140px]  bg-gradient-to-r from-noir via-noir via-black to-orange2    rounded-xl  ">
+                    class=" flex-1 h-12  lg:h-[150px] p-[.11rem] lg:h-[140px]  bg-gradient-to-tr from-noir via-noir  to-orange2    rounded-xl  ">
                     <div
-                        class=" flex justify-center items-center relative w-full  h-20  lg:h-[150px]  bg-gradient-to-tr from-noir via-black to-orange rounded-xl ">
-                        <div class="w-full h-20  lg:h-[150px] bg-black opacity-50 absolute rounded-xl ">
+                        class=" flex justify-center items-center relative w-full  h-20  lg:h-[150px]  bg-gradient-to-tr from-noir via-noir to-orange rounded-xl ">
+                        <div class="w-full h-20  lg:h-[150px] bg-noir opacity-40 absolute rounded-xl ">
                         </div>
-                        <h1 class="text-gris relative  text-sm lg:text-[24px] font-[500] font-inter ">User Experience</h1>
+                        <h1 class="text-gris relative  text-sm lg:text-[24px] font-[500] font-inter ">User Experience
+                        </h1> 
                     </div>
 
                 </div>
                 <div
-                    class=" flex-1 h-20 pl-[.11rem] lg:h-[150px] bg-gradient-to-tr from-orange2  via-black  to-black   rounded-xl  ">
+                    class=" flex-1 h-20 pl-[.11rem] lg:h-[150px] bg-gradient-to-tr from-orange2  via-noir  to-noir   rounded-xl  ">
                     <div
-                        class=" flex justify-center items-center  -mt-[.11rem] relative w-full  lg:h-[150px] h-20   bg-gradient-to-tr from-orange  via-black  to-noir rounded-xl ">
-                        <div class="w-full h-20 bg-black lg:h-[150px] opacity-50 absolute rounded-xl ">
+                        class=" flex justify-center items-center  -mt-[.11rem] relative w-full  lg:h-[150px] h-20   bg-gradient-to-tr from-orange  via-noir  to-noir rounded-xl ">
+                        <div class="w-full h-20 bg-noir lg:h-[150px] opacity-40 absolute rounded-xl ">
                         </div>
-                        <h1 class="text-gris relative  text-sm lg:text-[24px] font-[500] font-inter ">NoCode develop</h1>
+                        <h1 class="text-gris relative  text-sm lg:text-[24px] font-[500] font-inter ">NoCode develop
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -172,25 +213,25 @@
             <div class="flex  m-8 lg:m-12 justify-between">
                 <div class="flex flex-col">
                     <h1 class="text-blanct text-sm lg:text-[24px]  font-[600] font-inter">OS Mobile app</h1>
-                    <h2 class="text-blanct text-[12px] lg:text-[20px] font-[400] font-inter">Product develop</h2>
+                    <h2 class="text-gris text-[12px] lg:text-[20px] font-[400] font-inter">Product develop</h2>
                 </div>
                 <div class="w-[22px] h-[22px] rounded-full bg-orange2 flex justify-center items-center">
                     <img src="assets/img/fleche.svg" alt="" class="w-[8px] h-[10px]  object-cover">
                 </div>
             </div>
             <div class="flex justify-center">
-            <div class="w-[238px] h-[350px]  lg:h-[815px] lg:w-[433px] lg:mt-4 ">
-                <img src="assets/img/telephone.svg" alt="" class=" object-cover">
-            </div>
+                <div class="w-[238px] h-[350px]  lg:h-[815px] lg:w-[433px] lg:mt-4 ">
+                    <img src="assets/img/telephone.svg" alt="" class=" object-cover">
+                </div>
             </div>
         </div>
         <!-- ;;;;; -->
-        <div class="lg:-mt-72 lg:grid lg:gap-12">
-            <div class="bg-noir  lg:h-[528px] rounded-[9px] p-1 mt-4">
+        <div class="lg:-mt-72 lg:grid lg:gap-10">
+            <div class="bg-noir  lg:h-[528px] rounded-[9px] p-1 mt-6">
                 <div class="flex  m-8 justify-between lg:m-12">
                     <div class="flex flex-col">
                         <h1 class="text-blanct text-sm lg:text-[24px] font-[600] font-inter">AI Music product</h1>
-                        <h2 class="text-blanct text-[12px] lg:text-[20px] font-[400] font-inter">UX Case study</h2>
+                        <h2 class="text-gris text-[12px] lg:text-[20px] font-[400] font-inter">UX Case study</h2>
                     </div>
                     <div class="w-[22px] h-[22px] rounded-full bg-orange2 flex justify-center items-center">
                         <img src="assets/img/fleche.svg" alt="" class="w-[8px] h-[10px]  object-cover">
@@ -198,18 +239,18 @@
 
                 </div>
                 <div class="flex justify-center ">
-                <div class=" flex justify-center lg:justify-center mt-8 lg:items-center w-7/12 h-auto lg:mt-12 ">
-                    <div class="relative bg-cover  ml-12 bg-center bg-no-repeat w-[139px] h-[146px]  lg:w-[271px] lg:h-[285px] "
-                        style="background-image:url('assets/img/Music2.svg')">
+                    <div class=" flex justify-center lg:justify-center mt-8 lg:items-center w-7/12 h-auto lg:mt-12 ">
+                        <div class="relative bg-cover  ml-12 bg-center bg-no-repeat w-[139px] h-[146px]  lg:w-[271px] lg:h-[285px] "
+                            style="background-image:url('assets/img/Music2.svg')">
 
 
-                        <div class="relative bg-cover bg-center bg-no-repeat w-[152px] h-[159px]  lg:w-[251px] lg:h-[275px] -ml-12 -mt-4 "
-                            style="background-image:url('./assets/img/Music.svg')">
+                            <div class="relative bg-cover bg-center bg-no-repeat w-[152px] h-[159px]  lg:w-[251px] lg:h-[275px] -ml-12 -mt-4 "
+                                style="background-image:url('./assets/img/Music.svg')">
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
                 </div>
             </div>
             <!-- ;;;;; -->
@@ -217,29 +258,30 @@
                 <div class="flex  m-8 justify-between lg:m-12">
                     <div class="flex flex-col">
                         <h1 class="text-blanct text-sm lg:text-[24px] font-[600] font-inter">AI Music product</h1>
-                        <h2 class="text-blanct text-[12px] lg:text-[20px] font-[400] font-inter">UX Case study</h2>
+                        <h2 class="text-gris text-[12px] lg:text-[20px] font-[400] font-inter">UX Case study</h2>
                     </div>
                     <div class="w-[22px] h-[22px] rounded-full bg-orange2 flex justify-center items-center">
                         <img src="assets/img/fleche.svg" alt="" class="w-[8px] h-[10px]  object-cover">
                     </div>
                 </div>
-<div class="flex justify-center ">
-                <div class=" flex justify-center mt-8 w-7/12 h-auto lg:mt-12">
-                    <div class="relative bg-cover  ml-12 bg-center bg-no-repeat w-[139px] h-[146px] lg:w-[271px] lg:h-[285px] "
-                        style="background-image:url('assets/img/carte1.svg')">
+                <div class="flex justify-center ">
+                    <div class=" flex justify-center mt-8 w-7/12 h-auto lg:mt-12">
+                        <div class="relative bg-cover  ml-12 bg-center bg-no-repeat w-[139px] h-[146px] lg:w-[271px] lg:h-[285px] "
+                            style="background-image:url('assets/img/carte1.svg')">
 
 
-                        <div class="relative bg-cover bg-center bg-no-repeat w-[152px] h-[159px]   lg:w-[251px] lg:h-[265px] -ml-10 -mt-8"
-                            style="background-image:url('./assets/img/carte2.svg')">
+                            <div class="relative bg-cover bg-center bg-no-repeat w-[152px] h-[159px]   lg:w-[251px] lg:h-[265px] -ml-10 -mt-8"
+                                style="background-image:url('./assets/img/carte2.svg')">
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class=" lg:hidden flex justify-center  mt-12  items-center mb-12  gap-4 lg:justify-between flex-col">
+    <footer
+        class=" lg:hidden md:hidden flex justify-center  mt-12  items-center mb-12  gap-4 lg:justify-between flex-col">
         <div class=" lg:hidden  justify-center items-center rounded-[14px] w-[125px] h-[21px] bg-page flex gap-1">
             <div class="mt-1 w-[7px] h-[7px] lg:w-[9px] lg:h-[9px] rounded-full bg-orange"></div>
             <h2 class="text-blanct text-[9px] font-[500] font-inter ">AVAILABLE FOR JOB</h2>
@@ -253,13 +295,13 @@
     </footer>
 
     <div
-        class=" hidden lg:block  mt-6 flex-1  h-[125px] pl-[.04rem] bg-gradient-to-tr from-orange2  to-black  rounded-xl">
+        class=" hidden lg:block md:block mt-6 flex-1  h-[125px] pl-[.04rem] bg-gradient-to-tr from-orange2  via-noir  via-noir to-noir  rounded-xl">
         <div
-            class=" flex justify-center items-center  -mt-[.05rem] relative w-full  h-[122px]  bg-gradient-to-tr from-orange2  via-black  to-noir rounded-xl ">
+            class=" flex justify-center items-center  -mt-[.002rem] relative w-full  h-[122px]  bg-gradient-to-tr from-orange2  via-black  to-noir rounded-xl ">
             <div class="w-full h-[122px] bg-black opacity-50 absolute rounded-xl ">
-                <footer class=" flex justify-center   items-center mt-2 p-10  gap-4 lg:justify-between ">
+                <footer class=" flex justify-center md:justify-between   items-center mt-2 p-10   lg:justify-between ">
                     <h1 class="w-[7/12] h-auto text-gris font-inter font-[500]">Portfolio 2024</h1>
-                    <div class="flex  relative gap-4">
+                    <div class="flex  relative gap-6">
                         <a href="href" class="font-inter text-[15px] font-[500] relative  text-orange">Twitter</a>
                         <a href="href" class="font-inter text-[15px] font-[500] relative text-blanct">Instagram</a>
                         <a href="href" class="font-inter text-[15px] font-[500] text-blanct">LinkdIn</a>
@@ -272,5 +314,7 @@
             </div>
 
         </div>
+    </div>
 </body>
+
 </html>
